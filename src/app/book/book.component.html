@@ -1,0 +1,19 @@
+<div class="list" *ngIf="informations != undefined; else showDetalis">
+    <img src="http://atarionline.pl/biblioteka/czasopisma/{{ID}}/{{informations.miniaturka.text}}" width="250px">
+    <div class="line"></div>
+    <div class="information">
+        <h2>{{informations.nazwa.text}} {{informations.numer.text}}</h2>
+        <p>Wydawca: {{informations.wydawca.text }}</p>
+        <p>Podesłał: {{informations.podeslal.text}}</p>
+        <p>Skan: {{informations.skan.text }}</p>
+        <p>Stron: {{informations.stron.text }}</p>
+    </div>
+</div>
+
+<ng-template #showDetalis>
+    <p style="display:flex; justify-content:center;">Nie ma danych do wyświetlenia</p>
+</ng-template>
+
+
+
+<a routerLink="/biblioteka/{{ID}}/{{YEAR}}"  class="back">Wróć</a>

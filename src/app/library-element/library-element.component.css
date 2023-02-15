@@ -1,0 +1,22 @@
+.years{
+    display: grid;
+    margin:0 auto;
+    justify-content: center;
+    width:500px;
+    grid-template-columns: repeat( auto-fit, minmax(150px,150px) );
+    grid-gap:10px;
+}
+p{
+    border:2px solid rgb(59, 61, 84);
+    display: grid;
+    place-items: center;
+    padding:5px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.years-element:hover{
+    /* border:4px solid red; */
+    box-shadow: 1px 1px 10px 0.6px rgb(59, 61, 84);  
+    border:2px solid  rgb(59, 61, 84);
+}

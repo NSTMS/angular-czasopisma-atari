@@ -1,0 +1,23 @@
+p{
+    display:flex;
+    justify-content: center;
+}
+
+.articles{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap:20px;
+    place-items: center;
+
+}
+
+.articles-element{
+    width:200px;
+    cursor: pointer;
+}
+
+
+.articles-element:hover{
+    scale:1.1;  
+}

@@ -1,0 +1,35 @@
+.images{
+    display: grid;
+    place-items: center;
+    margin:0 auto;
+    justify-content: center;
+    grid-template-columns: repeat( auto-fit, minmax(200px,200px) );
+    grid-gap:20px;
+}
+.images img{
+    border-radius: 10px;
+    width:150px;
+    height:212px;
+    cursor:pointer;
+}
+.images img:hover{
+    box-shadow: 2px 2px 16px 4px rgba(59, 61, 84,0.5); 
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom:60px;
+}
+
+.images-photo{
+    width:150px;
+    height:212px;
+    cursor:pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:12px; 
+}

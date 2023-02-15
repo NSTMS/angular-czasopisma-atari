@@ -1,0 +1,3 @@
+<div class="articles" id="articles">
+    <img class="articles-element articles-img" *ngFor="let element of articleTitles" src="../assets/{{element.toLowerCase()}}.jpg" alt="{{element}}" (click)="navigateToYears(element)">
+</div>

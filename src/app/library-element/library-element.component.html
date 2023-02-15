@@ -1,0 +1,8 @@
+<div class="years">
+    <p class="years-element" *ngFor="let year of libraryData" (click)="directToYearBooks(year)">
+        {{year}}
+    </p>   
+</div>
+
+
+<a routerLink="/biblioteka" class="back">Wróć</a>

@@ -1,0 +1,27 @@
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:60px;
+}
+
+.list img{
+    border-radius: 10px;
+}
+.line{
+    width:3px;
+    height:160px;
+
+    display: grid;
+    place-items: center;
+
+    background-color: rgba(66, 68, 90);
+    margin-left: 60px;
+    margin-right:60px;
+
+}
+
+
+.information{
+    line-height :30px;
+}

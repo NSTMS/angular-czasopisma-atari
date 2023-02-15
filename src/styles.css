@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    padding:0;margin:0;box-sizing: border-box;
+}
+body{
+    
+}
+.back{
+    height:35px;
+    width: 160px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(59, 61, 84);
+    border-radius:10px;
+    color:aliceblue;
+    
+    margin: 0 auto;
+    margin-top:40px;
+    margin-bottom:40px;
+
+    text-decoration: none;
+}
+
+.back:visited{
+    color:aliceblue;
+}

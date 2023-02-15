@@ -1,0 +1,15 @@
+
+<h2>{{ ID }} z roku {{ YEAR }}</h2>
+<div class="images">
+    <ng-container *ngFor="let element of ksiazkiKeys, index as i">
+    <div *ngIf="element != '' else showUndefinded">
+        <img class="images-photo" [src]="'http://atarionline.pl/biblioteka/czasopisma/' + ID + '/' + data.czasopisma[ID][element].miniaturka.text" (click)="navigateToBook(element)">
+    </div>
+    <ng-template #showUndefinded>
+        <div class="images-photo"><p>{{ksiazkiBrak[i].text}}</p></div>
+    </ng-template>
+
+    </ng-container>
+</div>
+
+<a routerLink="/biblioteka/{{ID}}" class="back">Wróć</a>
