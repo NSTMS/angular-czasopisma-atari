@@ -30,6 +30,10 @@ export class GlobalServiceService {
       console.error('Error:', error);
       this.fetchedData = null;
     }
+
+    await this.http.get('../assets/czasopisma.xml', {responseType : 'text'}).toPromise().then((data:any)=>{
+      console.log(data);   
+    })  
   
     return this.fetchedData;
   }

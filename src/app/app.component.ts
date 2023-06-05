@@ -9,17 +9,10 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit{
   title:string  = 'two-way-binding';
   textValue:string = ""
-  plainText = new Components("text", true)
-  specialEvent = new Components("special",false)
   time: string = ""
   date:string = ""
   @ViewChild('input',{static:false}) input : any;
 
-
-  isNumeric(num : any){
-    return !isNaN(num)
-  }
-  
   checkValue(value:string)
   {    
     let regex =/^([0-9]+)(\.([0-9]{0,3})?)?$/;
@@ -51,18 +44,5 @@ export class AppComponent implements OnInit{
        }, 1000);  
     }
 
- constructor(private router: Router){
-  this.textValue = ""
- }
-}
-
-class Components
-{
-  name: string;
-  isVisible:boolean;
-
-  constructor(nameValue : string,  visible: boolean){
-    this.name = nameValue;
-    this.isVisible = visible;
-  }
+ constructor(private router: Router){ }
 }
